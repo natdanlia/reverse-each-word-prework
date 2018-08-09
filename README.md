@@ -16,7 +16,13 @@ Write a method called `reverse_each_word` that takes in a string argument of a s
 First solve it using `.each` Then write the same method using `.collect` to see the difference.
 
 For example:
-
+toppings = ["pickles", "mushrooms", "bacon"]
+ 
+def hamburger(toppings)
+  toppings.collect do |topping|
+    "I love #{topping} on my burgers!"
+  end
+end
 ```ruby
 reverse_each_word("Hello there, and how are you?")
   #=> "olleH ,ereht dna woh era ?uoy"
